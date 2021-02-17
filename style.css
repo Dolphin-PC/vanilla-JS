@@ -1,0 +1,133 @@
+* {
+    user-select: none;
+}
+
+body {
+    background-color: #2c3e50;
+}
+content {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+footer > .js-weather {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    color: white;
+    font-size: 2rem;
+}
+.js-toDoList > li {
+    list-style: circle;
+    font-size: 1.5rem;
+}
+.js-todoForm > input {
+    text-align: center;
+}
+.js-todoForm {
+    display: none;
+}
+
+.js-title {
+    font-size: 10em;
+    display: inline;
+}
+.greetings {
+    font-size: 3em;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+h1 {
+    transition: color 0.5s ease-in-out;
+}
+
+.clicked {
+    color: blueviolet;
+}
+.form {
+    display: none;
+}
+
+input {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: transparent;
+    font-size: 2rem;
+    color: white;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+input::placeholder {
+    color: white;
+    text-align: center;
+}
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+}
+
+.showing {
+    display: block;
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+    background-size: cover;
+}
+
+.typing-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.greetings {
+    display: none;
+}
+.greetings.showing {
+    display: flex;
+}
+
+.input-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 42px;
+    background-color: white;
+    margin-left: 8px;
+    animation: blink 0.6s linear infinite alternate;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}

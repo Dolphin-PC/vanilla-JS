@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PC-dolphin's To-Do</title>
+        <link rel="stylesheet" href="./style.css" type="text/css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+            integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <content>
+            <div class="js-clock">
+                <h1 class="js-title">00:00</h1>
+            </div>
+
+            <form class="js-form form">
+                <input type="text" placeholder="What is your name?" />
+            </form>
+            <div class="typing-container greetings">
+                <h4 class="js-greetings"></h4>
+                <h4 class="input-cursor"></h4>
+            </div>
+
+            <form class="todo js-todoForm">
+                <input type="text" placeholder="Write a to-do" />
+            </form>
+            <ul class="todo js-toDoList"></ul>
+        </content>
+        <footer>
+            <span class="js-weather"></span>
+        </footer>
+        <script src="clock.js"></script>
+        <script src="greeting.js"></script>
+        <script src="todo.js"></script>
+        <script src="bg.js"></script>
+        <script src="weather.js"></script>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/8.2.7/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/8.2.7/firebase-analytics.js"></script>
+
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
+    </body>
+</html>
