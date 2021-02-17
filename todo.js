@@ -35,7 +35,7 @@ function loadTodos() {
 
 function paintToDo(text) {
     const li = document.createElement('li');
-    const delBtn = document.createElement('button');
+    const delBtn = document.createElement('i');
     const span = document.createElement('span');
     const newId = toDos.length + 1;
     const toDosObj = {
