@@ -4,7 +4,11 @@ const COORDS = 'coords';
 const API_KEY = '02a02f10df63d92ab2284d9caacd7c8b';
 
 function getWeather(lat, lng) {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric`)
+    let url_protocol = 'http:';
+    if (window.location.protocol === 'http:') url_protocol = 'http:';
+    else if (window.location.protocol === 'https:') url_protocol = 'https:';
+
+    fetch(`${url_protocol}//api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric`)
         .then(function (res) {
             return res.json();
         })
